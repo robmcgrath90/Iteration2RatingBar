@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fyp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FYP">
+        <activity android:name=".StudybuddyrvItems"></activity>
+        <activity android:name=".StudyBuddyActiveGroups" />
+        <activity android:name=".StudyBuddySection" />
+        <activity android:name=".Jobs" />
+        <activity android:name=".StudyBuddy" />
+        <activity android:name=".Tips" />
+        <activity android:name=".ChatArea" />
+        <activity android:name=".CommunitySection" />
+        <activity android:name=".ClassFinder" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
