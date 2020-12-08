@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.CreateManagementComment">
+    tools:context=".Activities.CreateMarketingComment">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout4"
+        android:id="@+id/appBarLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,19 +15,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/Toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -41,11 +39,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navigation" />
 
+    <EditText
+        android:id="@+id/ptEnterMarketingComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Leave_comment_here"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout6" />
+
     <Button
-        android:id="@+id/btnSaveManagementComment"
+        android:id="@+id/btnSaveMarketComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="204dp"
@@ -53,22 +64,12 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/ptEnterMarketingComment"
+        app:layout_constraintVertical_bias="0.839" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/leave_comment_here"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Toolbar" />
+
+    <!--reference-->
+    <!--https://www.youtube.com/watch?v=JjfSjMs0ImQ -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

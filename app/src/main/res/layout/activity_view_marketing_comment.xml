@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.ViewManagementComments">
+    tools:context=".Activities.ViewMarketingComment">
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout4"
@@ -44,38 +45,47 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navigation" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="295dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/this_module_was_very_interesting_and_alot_of_the_core_principles_such_as_segmnetation_of_the_market_is_seen_throughout_other_modules_i_f_you_have_an_interest_in_why_people_buy_the_way_they_do_then_this_module_is_for_you"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar" />
 
-    <Button
-        android:id="@+id/btnSubmitManStar1"
+    <RatingBar
+        android:id="@+id/ratingBar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginTop="44dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitRtingMarketingComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSubmitRtingMarketingComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
         android:text="@string/submit"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="248dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="36dp"
-        android:numStars="5"
-        android:stepSize="0.5"
-        app:layout_constraintBottom_toTopOf="@+id/btnSubmitManStar1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="247dp"
-        android:layout_height="113dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/i_found_this_module_very_interesting_and_it_helped_build_a_foundation_that_helped_with_the_management_elective_in_fourth_year_i_would_advise_anyone_looking_to_go_into_managment_after_college_to_take_up_this_elective"
-        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!--reference-->
+    <!--https://www.youtube.com/watch?v=JjfSjMs0ImQ -->
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

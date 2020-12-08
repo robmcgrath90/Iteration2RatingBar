@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYP">
-        <activity android:name=".Activities.Management"></activity>
+        <activity android:name=".Activities.ViewMarketingComment"></activity>
+        <activity android:name=".Activities.CreateMarketingComment" />
+        <activity android:name=".Activities.Marketing" />
+        <activity android:name=".Activities.Management" />
         <activity android:name=".Activities.ViewManagementComments" />
         <activity android:name=".Activities.CreateManagementComment" />
         <activity android:name=".Activities.Resources" />

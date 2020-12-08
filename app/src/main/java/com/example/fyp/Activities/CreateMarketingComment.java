@@ -9,61 +9,26 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.fyp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Modules extends AppCompatActivity {
+public class CreateMarketingComment extends AppCompatActivity {
 
+    //declaring variable toolbar typ Toolbar
     private Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modules);
+        setContentView(R.layout.activity_create_marketing_comment);
 
-        //toolbar
+
+        //linking variable toolbar to the toolbar
         toolbar=findViewById(R.id.Toolbar);
         setSupportActionBar(toolbar);
-
-
-        //initialising buttons
-        final Button btnManagmentModule = (Button) findViewById(R.id.btnManagmentModule);
-        final Button btnMarketing = (Button) findViewById(R.id.btnMarketing);
-
-
-
-        btnManagmentModule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), Management.class);
-                startActivity(startIntent);
-            }
-        });
-
-        btnMarketing.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), Marketing.class);
-                startActivity(startIntent);
-            }
-        });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         //start of bottom nav
@@ -93,11 +58,7 @@ public class Modules extends AppCompatActivity {
         });
         //end of bottom nav
 
-
     }
-
-
-
 
     //using inflater to show the items in the menu (toolbar)
     @Override
@@ -144,4 +105,5 @@ public class Modules extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

@@ -39,6 +39,12 @@
     <string name="view_man">view man</string>
 
     <string name="submit">Submit</string>
+    <string name="i_found_this_module_very_interesting_and_it_helped_build_a_foundation_that_helped_with_the_management_elective_in_fourth_year_i_would_advise_anyone_looking_to_go_into_managment_after_college_to_take_up_this_elective">I found this module very interesting, and it helped build a foundation that helped with the management elective in fourth year. I would advise anyone looking to go into managment after college to take up this elective</string>
+    <string name="this_module_was_very_interesting_and_alot_of_the_core_principles_such_as_segmnetation_of_the_market_is_seen_throughout_other_modules_i_f_you_have_an_interest_in_why_people_buy_the_way_they_do_then_this_module_is_for_you">This module was very interesting, and alot of the core principles such as segmnetation of the market is seen throughout other modules. I f you have an interest in why people buy the way they do, then this module is for you!.</string>
+    <string name="Leave_comment_here">Leave Comment here</string>
+
+    <string name="save_comment">Save Comment</string>
+    <string name="leave_comment_here">Leave comment here</string>
 
 
     <string-array name="names">
