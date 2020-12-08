@@ -1,4 +1,4 @@
-package com.example.fyp;
+package com.example.fyp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,10 +9,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.fyp.Activities.ClassFinder;
-import com.example.fyp.Activities.CommunitySection;
+import com.example.fyp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Tips extends AppCompatActivity {
@@ -26,6 +27,30 @@ public class Tips extends AppCompatActivity {
 
         toolbar=findViewById(R.id.Toolbar);
         setSupportActionBar(toolbar);
+
+
+
+        //declaring types button and associating them with the buttons
+        final Button btnModule = (Button) findViewById(R.id.btnModule);
+        final Button btnResources = (Button) findViewById(R.id.btnResources);
+
+
+
+        btnModule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), Modules.class);
+                startActivity(startIntent);
+            }
+        });
+
+        btnResources.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), Resources.class);
+                startActivity(startIntent);
+            }
+        });
 
 
         //start of bottom nav

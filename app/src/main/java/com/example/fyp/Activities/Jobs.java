@@ -1,4 +1,4 @@
-package com.example.fyp;
+package com.example.fyp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,8 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.fyp.Activities.ClassFinder;
-import com.example.fyp.Activities.CommunitySection;
+import com.example.fyp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Jobs extends AppCompatActivity {

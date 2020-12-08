@@ -9,16 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYP">
-        <activity android:name=".StudybuddyrvItems"></activity>
-        <activity android:name=".StudyBuddyActiveGroups" />
-        <activity android:name=".StudyBuddySection" />
-        <activity android:name=".Jobs" />
-        <activity android:name=".StudyBuddy" />
-        <activity android:name=".Tips" />
-        <activity android:name=".ChatArea" />
-        <activity android:name=".CommunitySection" />
-        <activity android:name=".ClassFinder" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.Management"></activity>
+        <activity android:name=".Activities.ViewManagementComments" />
+        <activity android:name=".Activities.CreateManagementComment" />
+        <activity android:name=".Activities.Resources" />
+        <activity android:name=".Activities.Modules" />
+        <activity android:name=".StudybuddyrvItems" />
+        <activity android:name=".Activities.StudyBuddyActiveGroups" />
+        <activity android:name=".Activities.StudyBuddySection" />
+        <activity android:name=".Activities.Jobs" />
+        <activity android:name=".Activities.StudyBuddy" />
+        <activity android:name=".Activities.Tips" />
+        <activity android:name=".Activities.ChatArea" />
+        <activity android:name=".Activities.CommunitySection" />
+        <activity android:name=".Activities.ClassFinder" />
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

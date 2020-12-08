@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.Resources">
-
+    tools:context=".Activities.ViewManagementComments">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout4"
@@ -45,55 +44,38 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navigation" />
 
-    <Button
-        android:id="@+id/btnMarketViewComment"
-        android:layout_width="178dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="180dp"
-        android:text="@string/view_comments"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMarketCreateComment"
-        app:layout_constraintVertical_bias="0.685" />
 
     <Button
-        android:id="@+id/btnMarketCreateComment"
+        android:id="@+id/btnSubmitManStar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
-        android:text="@string/create_comment"
+        android:layout_marginBottom="92dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!--reference-->
-    <!--https://www.youtube.com/watch?v=JjfSjMs0ImQ -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="248dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitManStar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="247dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="32dp"
+        android:text="I found this module very interesting, and it helped build a foundation that helped with the management elective in fourth year. I would advise anyone looking to go into managment after college to take up this elective"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

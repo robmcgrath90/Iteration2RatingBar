@@ -1,4 +1,4 @@
-package com.example.fyp;
+package com.example.fyp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.fyp.Activities.ClassFinder;
+import com.example.fyp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class StudyBuddySection extends AppCompatActivity {

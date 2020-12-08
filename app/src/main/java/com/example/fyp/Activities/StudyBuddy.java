@@ -1,4 +1,4 @@
-package com.example.fyp;
+package com.example.fyp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,8 +27,9 @@ import java.util.Calendar;
 import android.app.TimePickerDialog;
 import android.widget.TimePicker;
 
-import com.example.fyp.Activities.ClassFinder;
-import com.example.fyp.Activities.CommunitySection;
+import com.example.fyp.fragments.DatePickerFragment;
+import com.example.fyp.R;
+import com.example.fyp.fragments.TimePickerFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class StudyBuddy extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener{

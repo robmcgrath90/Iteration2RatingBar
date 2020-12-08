@@ -29,7 +29,16 @@
     <string name="line_1">Line 1</string>
     <string name="line_2">Line 2</string>
     <string name="todo">TODO</string>
+    <string name="modules">modules</string>
+    <string name="marketing">Marketing</string>
+    <string name="management">Management</string>
 
+    <string name="create_comment">Create Comment</string>
+    <string name="view_comments">View Comments</string>
+    <string name="resourcs">resourcs</string>
+    <string name="view_man">view man</string>
+
+    <string name="submit">Submit</string>
 
 
     <string-array name="names">

@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/dashboard"
+        android:id="@+id/btm_dashboard"
         android:title="Community"
         android:icon="@drawable/ic_baseline"/>
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/btm_home"
         android:title="Home"
         android:icon="@drawable/ic_home"/>
 
     <item
-        android:id="@+id/maps"
+        android:id="@+id/btm_maps"
         android:title="Class finder"
         android:icon="@drawable/ic_baseline_map_24"/>
 

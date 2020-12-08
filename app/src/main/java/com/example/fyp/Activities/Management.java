@@ -9,24 +9,53 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.fyp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ClassFinder extends AppCompatActivity {
-
+public class Management extends AppCompatActivity {
 
     private Toolbar toolbar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_finder);
+        setContentView(R.layout.activity_management);
 
+        //toolbar
         toolbar=findViewById(R.id.Toolbar);
         setSupportActionBar(toolbar);
+
+
+
+
+
+        //initialising buttons
+        final Button btnManCreateComment = (Button) findViewById(R.id.btnManCreateComment);
+        final Button btnManViewComment = (Button) findViewById(R.id.btnManViewComment);
+
+
+
+        btnManCreateComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), CreateManagementComment.class);
+                startActivity(startIntent);
+            }
+        });
+
+        btnManViewComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), ViewManagementComments.class);
+                startActivity(startIntent);
+            }
+        });
+
+
 
 
         //start of bottom nav
@@ -47,7 +76,8 @@ public class ClassFinder extends AppCompatActivity {
                         startActivity(startCommunityIntent);
                         break;
                     case R.id.btm_maps:
-                       //activity already in use
+                        Intent startClassIntent = new Intent(getApplicationContext(), ClassFinder.class);
+                        startActivity(startClassIntent);
                         break;
                 }
                 return true;
@@ -57,7 +87,18 @@ public class ClassFinder extends AppCompatActivity {
 
 
 
+
+
     }
+    //under this is out of the oncreate method
+
+
+
+
+
+
+
+
 
     //using inflater to show the items in the menu (toolbar)
     @Override
@@ -66,6 +107,7 @@ public class ClassFinder extends AppCompatActivity {
         inflater.inflate(R.menu.menu,menu);
         return true;
     }
+
 
     // tutorial 2 mobile
     //https://www.youtube.com/watch?v=Pmsd2x-Bksk
@@ -84,15 +126,26 @@ public class ClassFinder extends AppCompatActivity {
                 startActivity(startIntent1);
                 Toast.makeText(this, "dropdown1 function pressed", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.dropdown2:
-                Intent startIntent2 = new Intent(getApplicationContext(), ClassFinder.class);
-                startActivity(startIntent2);
+            case R.id.btm_home:
+                Intent startIntent3 = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(startIntent3);
+                Toast.makeText(this, "dropdown2 function pressed", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btm_maps:
+                Intent startIntent4 = new Intent(getApplicationContext(), ClassFinder.class);
+                startActivity(startIntent4);
+                Toast.makeText(this, "dropdown2 function pressed", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btm_dashboard:
+                Intent startIntent5 = new Intent(getApplicationContext(), CommunitySection.class);
+                startActivity(startIntent5);
                 Toast.makeText(this, "dropdown2 function pressed", Toast.LENGTH_SHORT).show();
                 break;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 
 
 

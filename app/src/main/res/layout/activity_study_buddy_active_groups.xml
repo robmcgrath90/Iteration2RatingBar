@@ -5,7 +5,7 @@
     android:id="@+id/rvDisplayStudyGroups"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudyBuddyActiveGroups">
+    tools:context=".Activities.StudyBuddyActiveGroups">
 
 
     <com.google.android.material.appbar.AppBarLayout
