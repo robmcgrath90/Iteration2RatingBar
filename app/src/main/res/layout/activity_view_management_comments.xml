@@ -55,6 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- reference https://www.youtube.com/watch?v=O5I9cSW31ho-->
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="248dp"
