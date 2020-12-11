@@ -17,6 +17,7 @@ allprojects {
         google()
         jcenter()
         //added for the recyclerview in studybuddyactive activity
+        //also used for google maps
         maven {
             url "https://maven.google.com"
         }

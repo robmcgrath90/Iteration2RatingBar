@@ -63,10 +63,13 @@ public class ViewMarketingComment extends AppCompatActivity {
         //end of bottom nav
 
 
-
+        //  reference for the rating bar https://www.youtube.com/watch?v=O5I9cSW31ho
+        //creating a ratingbar variable linking it to the rating bar by the id
+        // creating a button to submit the rating
         ratingBar2 = findViewById(R.id.ratingBar2);
         final Button btnSubmit2 = (Button) findViewById(R.id.btnSubmitRtingMarketingComment);
 
+        //button that gets the rating and uses a toast to display it
         btnSubmit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

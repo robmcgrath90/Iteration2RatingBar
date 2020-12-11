@@ -45,7 +45,7 @@
         android:id="@+id/ptEnterMarketingComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="100dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/Leave_comment_here"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ptEnterMarketingComment"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="1.0" />
 
 
     <!--reference-->

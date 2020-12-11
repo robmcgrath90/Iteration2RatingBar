@@ -46,6 +46,8 @@
     <string name="save_comment">Save Comment</string>
     <string name="leave_comment_here">Leave comment here</string>
 
+    <string name="google_maps_API"> AIzaSyDbOaj1BHC61tPZbug4WYplDROodhLfXF8</string>
+
 
     <string-array name="names">
         <item>Accounting</item>

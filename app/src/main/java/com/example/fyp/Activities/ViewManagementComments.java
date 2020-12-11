@@ -61,9 +61,14 @@ public class ViewManagementComments extends AppCompatActivity {
         toolbar=findViewById(R.id.Toolbar);
         setSupportActionBar(toolbar);
 
-        ratingBar = findViewById(R.id.ratingBar);
-      final Button btnSubmit = (Button) findViewById(R.id.btnSubmitManStar1);
 
+        //  reference for the rating bar https://www.youtube.com/watch?v=O5I9cSW31ho
+        //creating a ratingbar variable linking it to the rating bar by the id
+        // creating a button to submit the rating
+        ratingBar = findViewById(R.id.ratingBar);
+        final Button btnSubmit = (Button) findViewById(R.id.btnSubmitManStar1);
+
+        //button that gets the rating and uses a toast to display it
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

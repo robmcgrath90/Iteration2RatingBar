@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -14,12 +16,18 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.fyp.R;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
 
+    private static final String TAG = "MainActivity";
+    //Creating a constant int that will send back 9001 if the correct version of google play isnt insalled on the device
+    private static final int Error_DIALOG_REQUEST = 9001;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +93,34 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+
+
+
+    // reference https://www.youtube.com/watch?v=M0bYvXlhgSI&list=PLgCYzUzKIBE-vInwQhGSdnbyJ62nixHCt&index=3
+    //method for checking the version of google play on the device
+    public boolean isServicesOK(){
+        Log.d(TAG, "checking google service version ");
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this);
+
+        if(available == ConnectionResult.SUCCESS){
+            //everything is fine and the user can make map requests
+            Log.d(TAG, "onCreate: google play services is working");
+            return true;
+        }
+        else if (GoogleApiAvailability.getInstance().isUserResolvableError(available)){
+            Log.d(TAG, "onCreate: ");
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(MainActivity.this, available, Error_DIALOG_REQUEST);
+            dialog.show();
+        }else{
+            Toast.makeText(this, "you cant make map requests", Toast.LENGTH_SHORT).show();
+        }
+        return false;
+    }
+
+
+
 
 
     //using inflater to show the items in the menu (toolbar)

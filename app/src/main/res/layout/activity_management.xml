@@ -6,19 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".Activities.Management">
 
+
     <Button
         android:id="@+id/btnManCreateComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="116dp"
         android:text="@string/create_comment"
         app:layout_constraintBottom_toTopOf="@+id/btnManViewComment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar"
+        app:layout_constraintVertical_bias="0.505" />
 
     <Button
         android:id="@+id/btnManViewComment"
@@ -26,13 +29,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="220dp"
         android:text="@string/view_comments"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout4"
